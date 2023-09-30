@@ -1,0 +1,39 @@
+.modal-dialog {
+  max-width: 80%;
+}
+
+.container-my-modal {
+  display: flex;
+
+  .example-img-project {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .project-img {
+      width: 250px;
+      height: 164px;
+      box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: 1s;
+        cursor: pointer;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .text-zone-my-modal {
+    width: 50%;
+  }
+}
