@@ -12,7 +12,7 @@ const MyModal = ({ imgButton, children, title }) => {
       <div className="project-img" onClick={handleShow}>
         <img src={imgButton} alt="projet 1" />
       </div>
-      <Modal show={showModal} onHide={handleClose}>
+      <Modal show={showModal} scrollable={true} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>

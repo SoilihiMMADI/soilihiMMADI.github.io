@@ -28,7 +28,8 @@ const Home = () => {
             <div className="text-zone-top-home">
               <h1 className="title-top-home">
                 Bonjour, je suis Soilihi M'MADI
-                <br /> Développeur Web / Mobile
+                <br />{' '}
+                <span className="important">Développeur Web / Mobile</span>.
               </h1>
               <div className="btn-home-top">
                 <Link to="/contact" className="btn-contact shadow">

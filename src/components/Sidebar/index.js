@@ -23,7 +23,7 @@ const Sidebar = () => {
       <button onClick={toggleSidebar} className="toggle-open-button">
         <FontAwesomeIcon icon={faBars} color="#fff" />
       </button>
-      <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+      <div className={`sidebar shadow-lg ${sidebarOpen ? 'open' : ''}`}>
         <button onClick={toggleSidebar} className="toggle-close-button">
           <FontAwesomeIcon icon={faClose} color="#fff" />
         </button>
@@ -34,7 +34,7 @@ const Sidebar = () => {
             to="/"
             className="home-link"
           >
-            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faHome} color="#4d4d4e" className='test'/>
           </NavLink>
           <NavLink
             onClick={toggleSidebar}

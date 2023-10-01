@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  background-color: #2faee0;
+
+  color: #fff;
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .link-zone {
+    display: flex;
+    justify-content: center;
+
+    a:hover {
+      svg {
+        color: #bea064;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}

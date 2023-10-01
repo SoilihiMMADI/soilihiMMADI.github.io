@@ -16,7 +16,8 @@ body {
 
 .home-page,
 .project-page,
-.contact-page {
+.contact-page,
+footer {
   opacity: 0;
   transform-style: preserve-3d;
   animation: fadeIn 0.7s forwards;
