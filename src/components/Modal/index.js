@@ -9,7 +9,7 @@ const MyModal = ({ imgButton, children, title }) => {
   const handleClose = () => setShowModal(false)
   return (
     <>
-      <div class="project-img" onClick={handleShow}>
+      <div className="project-img" onClick={handleShow}>
         <img src={imgButton} alt="projet 1" />
       </div>
       <Modal show={showModal} onHide={handleClose}>

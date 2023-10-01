@@ -1,10 +1,38 @@
+$primary-color: #bea064;
+
+@import 'animate.css';
+
 @import '~bootstrap/scss/bootstrap';
+@import 'loaders.css/src/animations/ball-pulse-sync.scss';
 
 @font-face {
   font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2')
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
-body{
+body {
   font-family: 'Coolvetica';
+}
+
+.home-page,
+.project-page,
+.contact-page {
+  opacity: 0;
+  transform-style: preserve-3d;
+  animation: fadeIn 0.7s forwards;
+  animation-delay: 0.7s;
+}
+
+.loader-active {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  height: 50px;
+  animation: fadeOut 0.7s forwards;
+  animation-delay: 0.7s;
 }

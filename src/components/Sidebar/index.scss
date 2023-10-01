@@ -79,12 +79,6 @@
       }
     }
 
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
-      }
-    }
-
     a.active {
       svg {
         color: #bea064;
@@ -136,6 +130,7 @@
   background-color: #bea064;
   border: 2px solid #bea064;
   transition: 0.3s;
+  z-index: 998;
   svg {
     color: #fff;
     transition: 0.3s;
