@@ -9,8 +9,11 @@ const MyModal = ({ imgButton, children, title }) => {
   const handleClose = () => setShowModal(false)
   return (
     <>
-      <div className="project-img" onClick={handleShow}>
-        <img src={imgButton} alt="projet 1" />
+      <div className="project-img-title">
+        <div className="project-img" onClick={handleShow}>
+          <img src={imgButton} alt="projet 1" />
+        </div>
+        <h3 className="project-title mt-4">{title}</h3>
       </div>
       <Modal show={showModal} scrollable={true} onHide={handleClose}>
         <Modal.Header closeButton>

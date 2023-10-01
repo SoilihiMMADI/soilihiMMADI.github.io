@@ -5,6 +5,7 @@ import MyModal from '../Modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import Separator from '../Separator'
 
 const Project = () => {
   return (
@@ -12,11 +13,8 @@ const Project = () => {
       <div className="project-page">
         <Container fluid>
           <section className="section project-top">
-            <h1 className="title-top-project">Projets</h1>
+            <h1 className="section-title title-top-project text-center mb-5">PROJETS</h1>
             <div className="text-zone-top-project">
-              <div className="project-img">
-                <img src={WorkProjectTop} alt="projet top" />
-              </div>
               <div className="project-top-text">
                 <p>
                   Voici quelques projets que j'ai pu réaliser jusqu'à
@@ -32,11 +30,16 @@ const Project = () => {
                   certaines parties si je me retrouve dans le besoin.
                 </p>
               </div>
+              <div className="project-img">
+                <img src={WorkProjectTop} alt="projet top" className='shadow' />
+              </div>
             </div>
           </section>
+
+          <Separator />
           {/* ===== PROJECTS ===== */}
           <section className="section project-list">
-            <div class="project-container bd-grid">
+            <div className="project-container bd-grid">
               <MyModal imgButton={WorkProjectTop} title={'AFC'}>
                 <div className="container-my-modal">
                   <div className="example-img-project">
@@ -145,6 +148,7 @@ const Project = () => {
                       JavaScript
                     </p>
                     <br />
+                    <div className='d-flex justify-content-end'>
                     <a
                       href="https://github.com/SoilihiMMADI/GCR"
                       target="_blank"
@@ -156,6 +160,7 @@ const Project = () => {
                         className="anchor-icon"
                       />
                     </a>
+                    </div>
                   </div>
                 </div>
               </MyModal>
@@ -163,7 +168,7 @@ const Project = () => {
           </section>
         </Container>
       </div>
-        <Loader type="ball-pulse-sync" />
+      <Loader type="ball-pulse-sync" />
     </>
   )
 }
