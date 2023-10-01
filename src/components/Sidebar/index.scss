@@ -2,12 +2,13 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* Masque la sidebar par défaut */
-  width: 250px;
+  left: -230px; /* Masque la sidebar par défaut */
+  width: 230px;
   height: 100%;
   transition: all 0.3s ease-in-out;
   z-index: 999;
-  background-color: rgb(54, 52, 52);
+  background-color: #2faee0;
+  color: #fff;
 
   nav {
     display: block;
@@ -20,19 +21,21 @@
 
     a {
       font-size: 32px;
-      color: #4d4d4e;
       display: block;
       line-height: 51px;
       height: 70px;
       position: relative;
       text-decoration: none;
+      svg {
+        color: #fff;
+      }
 
       i {
         transition: all 0.3s ease-out;
       }
 
       &:hover {
-        color: #ffd700;
+        color: #bea064;
 
         svg {
           opacity: 0;
@@ -84,7 +87,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: #bea064;
       }
     }
   }
@@ -105,12 +108,14 @@
         display: block;
         font-size: 24px;
         line-height: 16px;
-        color: #4d4d4e;
+        svg {
+          color: #fff;
+        }
       }
 
       &:hover {
         .anchor-icon {
-          color: #ffd700;
+          color: #bea064;
         }
       }
     }
@@ -125,10 +130,44 @@
   position: fixed;
   top: 10px;
   left: 10px;
-  transition: opacity;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #bea064;
+  border: 2px solid #bea064;
+  transition: 0.3s;
+  svg {
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  &:hover, &:active {
+    background-color: #fff;
+    svg {
+      color: #bea064;
+    }
+  }
 }
+
 .toggle-close-button {
   position: absolute;
   top: 10px;
   right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #FFF;
+  border: 2px solid #FFF;
+  transition: 0.3s;
+  svg {
+    color: #bea064;
+    transition: 0.3s;
+  }
+
+  &:hover, &:active {
+    background-color: #bea064;
+    svg {
+      color: #FFF;
+    }
+  }
 }

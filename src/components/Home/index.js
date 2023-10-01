@@ -2,6 +2,21 @@ import { Container } from 'react-bootstrap'
 import './index.scss'
 import PictureHome from '../../assets/images/PhotoHome.png'
 import WorkSkills from '../../assets/images/WorkSkills.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faAngular,
+  faBootstrap,
+  faCss3,
+  faHtml5,
+  faJs,
+  faPhp,
+  faReact,
+  faSymfony,
+  faVuejs,
+} from '@fortawesome/free-brands-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import Separator from '../Separator'
 
 const Home = () => {
   return (
@@ -11,16 +26,20 @@ const Home = () => {
           <div className="text-zone-top-home">
             <h1 className="title-top-home">
               Bonjour, je suis Soilihi M'MADI
-              <br /> Apprenti Développeur full-stack
+              <br /> Développeur Web / Mobile
             </h1>
             <div className="btn-home-top">
-              <button className="btn">Contact</button>
+            <Link to="/contact" className="btn-contact shadow">
+            CONTACT
+          </Link>
             </div>
           </div>
           <div className="home-img">
-            <img src={PictureHome} alt="accueil" />
+            <img src={PictureHome} alt="accueil" className=' shadow' />
           </div>
         </section>
+
+        <Separator />
 
         {/* ===== ABOUT =====  */}
         <section className="home-about section text-center" id="about">
@@ -28,13 +47,16 @@ const Home = () => {
 
           <div className="about-container">
             <div className="home-about-text-zone">
-              <h2 className="home-about-subtitle mb-4">Bonjour,</h2>
               <p className="home-about-text">
-                Développeur WEB/MOBILE, une année et 6 mois d'expérience en
-                alternance dans lesquelles j'ai pu acquérir des compétences en
-                programmations avec des frameworks comme Angular, Symfony,
-                Ionic, React, React Native et consolidé les compétences que
-                j'avais déjà.
+                <span className="first">Bonjour</span>,{' '}
+                <span className="important">Développeur WEB/MOBILE</span>, une
+                année et 6 mois d'expérience en alternance dans lesquelles j'ai
+                pu acquérir des compétences en programmations avec des
+                frameworks comme Angular,{' '}
+                <span className="important">Symfony</span>, Ionic,{' '}
+                <span className="important">React</span>,{' '}
+                <span className="important">React Native</span> et consolidé les
+                compétences que j'avais déjà.
                 <br />
                 Je n'ai pas d'objection ou de crainte au fait de devoir
                 apprendre un langage ou framework que je ne maîtrise pas.
@@ -43,80 +65,126 @@ const Home = () => {
           </div>
         </section>
 
+        <Separator />
+
         {/* ===== SKILLS ===== */}
         <section className="home-skills section">
           <h2 className="section-title text-center mb-5">COMPÉTENCES</h2>
 
           <div className="skills-container">
             <div className="skills-part-1">
-              <h2 className="skills-subtitle mb-4">Développement web</h2>
-              <p className="home-skills-text-zone">
-                Voici mes principales compétences que j'ai pu acquérir en
-                développement web.
+              <h2 className="skills-subtitle mb-4">
+                Développement Web / Mobile
+              </h2>
+              <p className="home-skills-text-zone mb-4">
+                Voici les principales compétences que j'ai pu acquérir en
+                développement web et mobile.
               </p>
               <div className="skills-data-group">
                 <div className="skills-data-g1">
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bxl-html5 skills-icon"></i>
+                      <div>
+                        <FontAwesomeIcon
+                          icon={faHtml5}
+                          color="#bea064"
+                          className="anchor-icon"
+                        />
+                        <FontAwesomeIcon
+                          icon={faCss3}
+                          color="#bea064"
+                          className="anchor-icon"
+                        />
+                      </div>
                       <span className="skills-name">HTML/CSS</span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bxl-javascript skills__icon"></i>
-                      <span className="skills-name">JAVASCRIPT</span>
+                      <FontAwesomeIcon
+                        icon={faJs}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
+                      <span className="skills-name">JavaScript</span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                      <FontAwesomeIcon
+                        icon={faPhp}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
                       <span className="skills-name">PHP</span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                      <FontAwesomeIcon
+                        icon={faDatabase}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
                       <span className="skills-name">SQL</span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bxl-php skills-icon"></i>
-                      <span className="skills-name">BOOTSTRAP</span>
+                      <FontAwesomeIcon
+                        icon={faBootstrap}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
+                      <span className="skills-name">Bootstrap</span>
                     </div>
                   </div>
                 </div>
                 <div className="skills-data-g2">
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                      <FontAwesomeIcon
+                        icon={faSymfony}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
                       <span className="skills-name">Symfony</span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                      <FontAwesomeIcon
+                        icon={faReact}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
                       <span className="skills-name">
                         React.js, React Native
                       </span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                      <FontAwesomeIcon
+                        icon={faVuejs}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
                       <span className="skills-name">Vue.js</span>
                     </div>
                   </div>
-                  <div className="skills-data">
+                  <div className="skills-data shadow">
                     <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                      <FontAwesomeIcon
+                        icon={faAngular}
+                        color="#bea064"
+                        className="anchor-icon"
+                      />
                       <span className="skills-name">Angular</span>
                     </div>
                   </div>
-                  <div className="skills-data">
-                    <div className="skills-names">
-                      <i className="bx bx-php skills-icon"></i>
+                  <div className="skills-data shadow">
+                    <div className="skills-names justify-content-end">
                       <span className="skills-name">Ionic</span>
                     </div>
                   </div>
@@ -125,7 +193,7 @@ const Home = () => {
             </div>
 
             <div className="skills-part-2">
-              <img src={WorkSkills} alt="skills" className="skills-img" />
+              <img src={WorkSkills} alt="skills" className="skills-img shadow" />
             </div>
           </div>
         </section>

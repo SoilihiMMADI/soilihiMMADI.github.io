@@ -2,8 +2,14 @@
   margin: 70px 100px;
 }
 
+.section-title{
+  color: #2FAEE0;
+  font-size: 34px;
+}
+
 .home-top {
   display: flex;
+  justify-content: space-between;
 }
 
 .text-zone-top-home {
@@ -14,20 +20,32 @@
 
   h1 {
     font-size: 45px;
+    color: #2FAEE0;
   }
 
   .btn-home-top {
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
 
-    button {
+    .btn-contact {
       height: 100%;
-      width: 120px;
-      background-color: blue;
-      border: 1px solid white;
-      border-radius: 15px;
-      color: white;
+      width: 150px;
+      font-size: 22px;
+      color: #fff;
+      background-color: #bea064;
+      border: 2px solid #bea064;
+      border-radius: 8px;
+      transition: 0.3s;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: #bea064;
+        background-color: #fff;
+      }
     }
   }
 }
@@ -38,6 +56,7 @@
 
   img {
     border-radius: 100%;
+    border: 4px solid #2FAEE0;
     width: 420px;
   }
 }
@@ -45,6 +64,17 @@
 .home-about {
   display: flex;
   flex-direction: column;
+
+  .home-about-text{
+    font-size: 24px;
+
+    span.first{
+      font-size: 28px;
+    }
+    span.important{
+      color: #bea064;
+    }
+  }
 }
 
 .home-skills {
@@ -52,31 +82,60 @@
     display: flex;
 
     .skills-part-1 {
-      width: 50%;
+      width: 55%;
       padding-right: 15px;
       height: 100%;
+
+      .home-skills-text-zone{
+        font-size: 20px;
+      }
 
       .skills-data-group {
         display: flex;
 
+        .skills-data{
+          border: 2px solid #2FAEE0;
+          border-radius: 5px;
+          color: #2FAEE0;
+          margin-bottom: 10px;
+          padding: 10px;
+
+          .skills-names{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+          }
+
+          .skills-name{
+            text-align: end;
+          }
+        }
+
         .skills-data-g1 {
           width: 50%;
           height: 100%;
+          margin-right: 8px;
         }
         .skills-data-g2 {
           width: 50%;
           height: 100%;
+          margin-left: 8px;
         }
       }
     }
 
     .skills-part-2 {
-      width: 50%;
+      width: 45%;
       padding-left: 15px;
+      display: flex;
+      align-items: center;
 
       .skills-img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        border-radius: 15px;
+        border: 4px solid #2FAEE0;
       }
     }
   }

@@ -2,6 +2,8 @@ import './index.scss'
 import WorkProjectTop from '../../assets/images/WorkSkills.jpg'
 import { Container } from 'react-bootstrap'
 import MyModal from '../Modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Project = () => {
   return (
@@ -89,7 +91,11 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i>GitHub</i>
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      color="#4d4d4e"
+                      className="anchor-icon"
+                    />
                   </a>
                 </div>
               </div>
@@ -131,14 +137,21 @@ const Project = () => {
                     informatique pour saisir les comptes rendus des visites
                     effectuées auprès des praticiens.
                   </p>
-                  <p>Compétences : PhpMyAdmin · HTML5 · PHP · SQL · CSS · JavaScript</p>
+                  <p>
+                    Compétences : PhpMyAdmin · HTML5 · PHP · SQL · CSS ·
+                    JavaScript
+                  </p>
                   <br />
                   <a
                     href="https://github.com/SoilihiMMADI/GCR"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i>GitHub</i>
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      color="#4d4d4e"
+                      className="anchor-icon"
+                    />
                   </a>
                 </div>
               </div>
