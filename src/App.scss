@@ -14,6 +14,27 @@ body {
   font-family: 'Coolvetica';
 }
 
+/* Styles pour toutes les barres de défilement */
+/* Barre de défilement dans WebKit (Chrome) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bea064;
+  border-radius: 10px;
+}
+
+/* Barre de défilement dans Mozilla Firefox */
+* {
+  scrollbar-width: 8px;
+  scrollbar-color: #bea064 #fff;
+}
+
 .home-page,
 .project-page,
 .contact-page,

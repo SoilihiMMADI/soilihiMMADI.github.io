@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
-  faClose,
   faEnvelope,
   faHome,
   faProjectDiagram,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import MyButtonClose from '../MyButtonClose'
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -24,9 +24,9 @@ const Sidebar = () => {
         <FontAwesomeIcon icon={faBars} color="#fff" />
       </button>
       <div className={`sidebar shadow-lg ${sidebarOpen ? 'open' : ''}`}>
-        <button onClick={toggleSidebar} className="toggle-close-button">
-          <FontAwesomeIcon icon={faClose} color="#fff" />
-        </button>
+        <div className="div-close">
+        <MyButtonClose onClose={toggleSidebar} />
+        </div>
         <nav>
           <NavLink
             onClick={toggleSidebar}

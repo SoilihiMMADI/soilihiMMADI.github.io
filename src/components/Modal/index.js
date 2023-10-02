@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import './index.scss'
+import MyButtonClose from '../MyButtonClose'
 
 const MyModal = ({ imgButton, children, title }) => {
   const [showModal, setShowModal] = useState(false)
@@ -16,8 +17,9 @@ const MyModal = ({ imgButton, children, title }) => {
         <h3 className="project-title mt-4">{title}</h3>
       </div>
       <Modal show={showModal} scrollable={true} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton={false}>
           <Modal.Title>{title}</Modal.Title>
+          <MyButtonClose onClose={handleClose} />
         </Modal.Header>
         <Modal.Body>{children}</Modal.Body>
       </Modal>

@@ -1,0 +1,15 @@
+.my-btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+
+  svg{
+    color: #fff;
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      color: #bea064;
+    }
+  }
+}
