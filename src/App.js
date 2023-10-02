@@ -9,6 +9,7 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 
 function App() {
+
   useEffect(() => {
     // Initialisez AOS avec les options de configuration souhaitées
     AOS.init({
