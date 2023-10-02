@@ -162,7 +162,19 @@ const Home = () => {
                           className="anchor-icon"
                         />
                         <span className="skills-name">
-                          React.js, React Native
+                          React.js
+                        </span>
+                      </div>
+                    </div>
+                    <div className="skills-data shadow">
+                      <div className="skills-names">
+                        <FontAwesomeIcon
+                          icon={faReact}
+                          color="#bea064"
+                          className="anchor-icon"
+                        />
+                        <span className="skills-name">
+                          React Native
                         </span>
                       </div>
                     </div>

@@ -16,7 +16,8 @@ span.important {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 20px;
+  margin-right: 20px;
+  width: 50%;
 
   h1 {
     font-size: 45px;
@@ -51,13 +52,13 @@ span.important {
 }
 
 .home-img {
-  width: 295px;
-  padding-left: 20px;
+  width: 50%;
+  margin-left: 20px;
 
   img {
     border-radius: 100%;
     border: 4px solid #2faee0;
-    width: 420px;
+    width: 100%;
     transition: transform 0.4s ease-in-out;
 
     &:hover {
@@ -156,15 +157,57 @@ span.important {
 }
 
 
-@media screen and (min-width: 768px) {
-  .home-img {
-    width: 457px;
-    bottom: 15%;
+@media screen and (max-width: 768px) {
+  .home-top{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .text-zone-top-home{
+      text-align: center;
+      margin-bottom: 40px;
+      margin-right: 0;
+      width: 100%;
+
+      .title-top-home{
+        margin-bottom: 20px;
+      }
+    }
+
+    .home-img{
+      width: 70%;
+      margin-left: 0;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .home-skills{
+    .skills-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .skills-part-1{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+
+      .skills-part-2{
+        width: 100%;
+        padding: 0;
+      }
+    }
+
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .home-img {
-    right: 10%;
-  }
-}
+// @media screen and (min-width: 992px) {
+//   .home-img {
+//     width: 457px;
+//     bottom: 15%;
+//   }
+// }
