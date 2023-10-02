@@ -40,12 +40,25 @@ const Contact = () => {
           <div className="contact-part">
             <div className="part-1">
               <div className="text-zone">
-                <h1 className="text-center mb-4 title-contact">ME CONTACTER</h1>
-                <p className="text-contact">
+                <h1
+                  className="text-center mb-4 title-contact"
+                  data-aos="fade-up"
+                >
+                  ME CONTACTER
+                </h1>
+                <p
+                  className="text-contact"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   Je suis actuellement à la recherche d'une entreprise pour
                   conclure mon année de Master 2.
                 </p>
-                <p className="text-contact">
+                <p
+                  className="text-contact"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   Si vous êtes intéressé par mon profil ou que vous connaissez
                   quelqu'un dans votre entourage qui le serait, n'héistez pas à
                   me contacter via se formulaire et à jetter un coup d'oeil à
@@ -53,7 +66,11 @@ const Contact = () => {
                   <FontAwesomeIcon icon={faSmile} color="#2faee0" />.
                 </p>
               </div>
-              <div className="link-zone">
+              <div
+                className="link-zone"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <a
                   href="https://www.linkedin.com/in/soilihi-mmadi/"
                   target="_blank"
@@ -86,6 +103,8 @@ const Contact = () => {
                       name="user_name"
                       required
                       className="input-name shadow"
+                      data-aos="fade-up"
+                      data-aos-delay="500"
                     />
                     <input
                       placeholder="Email"
@@ -93,6 +112,8 @@ const Contact = () => {
                       name="user_email"
                       required
                       className="input-email shadow"
+                      data-aos="fade-up"
+                      data-aos-delay="550"
                     />
                   </div>
                   <div className="mb-3">
@@ -102,6 +123,8 @@ const Contact = () => {
                       name="subject"
                       required
                       className="input-subject shadow"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
                     />
                   </div>
                   <div className="mb-3">
@@ -110,10 +133,17 @@ const Contact = () => {
                       name="message"
                       required
                       className="textarea-message shadow"
+                      data-aos="fade-up"
+                      data-aos-delay="650"
                     ></textarea>
                   </div>
                   <div className="d-flex justify-content-end">
-                    <button type="submit" className="btn-send shadow">
+                    <button
+                      type="submit"
+                      className="btn-send shadow"
+                      data-aos="fade-up"
+                      data-aos-delay="700"
+                    >
                       ENVOYER
                     </button>
                   </div>

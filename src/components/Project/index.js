@@ -16,6 +16,8 @@ import BackOfficePageES from '../../assets/images/eco-service/BackOfficePageES.p
 // B.VICE
 import LogoBVICE from '../../assets/images/bvice/LogoBVICE.png'
 import Bvice from '../../assets/images/bvice/siteweb.png'
+import LoginPageBV from '../../assets/images/bvice/LoginPageBV.png'
+import AboutPageBV from '../../assets/images/bvice/AboutPageBV.png'
 
 // AFC
 // GCR
@@ -37,11 +39,11 @@ const Project = () => {
       <div className="project-page">
         <Container fluid>
           <section className="section project-top">
-            <h1 className="section-title title-top-project text-center mb-5">
+            <h1 className="section-title title-top-project text-center mb-5" data-aos="fade-up" data-aos-delay="500">
               PROJETS
             </h1>
             <div className="text-zone-top-project">
-              <div className="project-top-text">
+              <div className="project-top-text" data-aos="fade-up" data-aos-delay="600">
                 <p>
                   Voici quelques projets que j'ai pu réaliser jusqu'à
                   aujourd'hui.
@@ -56,7 +58,7 @@ const Project = () => {
                   certaines parties si je me retrouve dans le besoin.
                 </p>
               </div>
-              <div className="project-img">
+              <div className="project-img" data-aos="fade-up" data-aos-delay="500">
                 <img src={WorkProjectTop} alt="projet top" className="shadow" />
               </div>
             </div>
@@ -67,7 +69,7 @@ const Project = () => {
           {/* ===== PROJECTS ===== */}
           <section className="section project-list">
             <div className="project-container bd-grid">
-              <MyModal imgButton={LogoMS} title={'MeraSoin'}>
+              <MyModal imgButton={LogoMS} title={'MeraSoin'} delay={300}>
                 <div className="container-my-modal">
                   <div className="example-img-project">
                     <div className="project-img">
@@ -141,7 +143,7 @@ const Project = () => {
                   </div>
                 </div>
               </MyModal>
-              <MyModal imgButton={LogoES} title={'Éco Services'}>
+              <MyModal imgButton={LogoES} title={'Éco Services'}  delay={400}>
                 <div className="container-my-modal">
                   <div className="example-img-project">
                     <div className="project-img">
@@ -193,17 +195,17 @@ const Project = () => {
                   </div>
                 </div>
               </MyModal>
-              <MyModal imgButton={LogoBVICE} title={'Stage B.VICE'}>
+              <MyModal imgButton={LogoBVICE} title={'Stage B.VICE'} delay={500}>
                 <div className="container-my-modal">
                   <div className="example-img-project">
                     <div className="project-img">
-                      <img src={Bvice} alt="page de connexion" />
+                      <img src={LoginPageBV} alt="page de connexion" />
                     </div>
                     <div className="project-img">
-                      <img src={Bvice} alt="page médicament" />
+                      <img src={AboutPageBV} alt="page à propos" />
                     </div>
                     <div className="project-img">
-                      <img src={Bvice} alt="page praticien" />
+                      <img src={Bvice} alt="ordi smartphone bvice" />
                     </div>
                   </div>
                   <div className="text-zone-my-modal">
@@ -253,10 +255,10 @@ const Project = () => {
                   </div>
                 </div>
               </MyModal>
-              <MyModal imgButton={LogoGSB} title={'AFC'}>
+              <MyModal imgButton={LogoGSB} title={'AFC'} delay={300}>
                 <div className="container-my-modal">
                   <div className="example-img-project">
-                    <div className="project-img">
+                    {/* <div className="project-img">
                       <img src={WorkProjectTop} alt="page d'accueil" />
                     </div>
                     <div className="project-img">
@@ -264,7 +266,7 @@ const Project = () => {
                     </div>
                     <div className="project-img">
                       <img src={WorkProjectTop} alt="page contact" />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="text-zone-my-modal">
                     <h3>Projet scolaire</h3>
@@ -321,7 +323,7 @@ const Project = () => {
                   </div>
                 </div>
               </MyModal>
-              <MyModal imgButton={LogoGSB} title={'GCR'}>
+              <MyModal imgButton={LogoGSB} title={'GCR'} delay={400}>
                 <div className="container-my-modal">
                   <div className="example-img-project">
                     <div className="project-img">

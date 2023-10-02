@@ -3,14 +3,18 @@ import Modal from 'react-bootstrap/Modal'
 import './index.scss'
 import MyButtonClose from '../MyButtonClose'
 
-const MyModal = ({ imgButton, children, title }) => {
+const MyModal = ({ imgButton, children, title, delay }) => {
   const [showModal, setShowModal] = useState(false)
 
   const handleShow = () => setShowModal(true)
   const handleClose = () => setShowModal(false)
   return (
     <>
-      <div className="project-img-title">
+      <div
+        className="project-img-title"
+        data-aos="fade-up"
+        data-aos-delay={delay}
+      >
         <div className="project-img shadow" onClick={handleShow}>
           <img src={imgButton} alt="projet" />
         </div>

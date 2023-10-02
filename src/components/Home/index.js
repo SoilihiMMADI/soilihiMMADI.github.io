@@ -24,7 +24,7 @@ const Home = () => {
     <>
       <div className="home-page">
         <Container fluid>
-          <section className="home-top section">
+          <section className="home-top section" data-aos="fade-down" data-aos-delay="700">
             <div className="text-zone-top-home">
               <h1 className="title-top-home">
                 Bonjour, je suis Soilihi M'MADI
@@ -46,10 +46,10 @@ const Home = () => {
 
           {/* ===== ABOUT =====  */}
           <section className="home-about section text-center" id="about">
-            <h2 className="section-title mb-5">À PROPOS</h2>
+            <h2 className="section-title mb-5" data-aos="fade-up">À PROPOS</h2>
 
             <div className="about-container">
-              <div className="home-about-text-zone">
+              <div className="home-about-text-zone" data-aos="fade-up">
                 <p className="home-about-text">
                   <span className="first">Bonjour</span>,{' '}
                   <span className="important">Développeur WEB/MOBILE</span>, une
@@ -72,20 +72,20 @@ const Home = () => {
 
           {/* ===== SKILLS ===== */}
           <section className="home-skills section">
-            <h2 className="section-title text-center mb-5">COMPÉTENCES</h2>
+            <h2 className="section-title text-center mb-5" data-aos="fade-up">COMPÉTENCES</h2>
 
             <div className="skills-container">
               <div className="skills-part-1">
-                <h2 className="skills-subtitle mb-4">
+                <h2 className="skills-subtitle mb-4" data-aos="fade-up">
                   Développement Web / Mobile
                 </h2>
-                <p className="home-skills-text-zone mb-4">
+                <p className="home-skills-text-zone mb-4" data-aos="fade-up">
                   Voici les principales compétences que j'ai pu acquérir en
                   développement web et mobile.
                 </p>
                 <div className="skills-data-group">
                   <div className="skills-data-g1">
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <div>
                           <FontAwesomeIcon
@@ -102,7 +102,7 @@ const Home = () => {
                         <span className="skills-name">HTML/CSS</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faJs}
@@ -112,7 +112,7 @@ const Home = () => {
                         <span className="skills-name">JavaScript</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faPhp}
@@ -122,7 +122,7 @@ const Home = () => {
                         <span className="skills-name">PHP</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faDatabase}
@@ -132,7 +132,7 @@ const Home = () => {
                         <span className="skills-name">SQL</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faBootstrap}
@@ -144,7 +144,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="skills-data-g2">
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faSymfony}
@@ -154,7 +154,7 @@ const Home = () => {
                         <span className="skills-name">Symfony</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faReact}
@@ -166,7 +166,7 @@ const Home = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faReact}
@@ -178,7 +178,7 @@ const Home = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faVuejs}
@@ -188,7 +188,7 @@ const Home = () => {
                         <span className="skills-name">Vue.js</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names">
                         <FontAwesomeIcon
                           icon={faAngular}
@@ -198,7 +198,7 @@ const Home = () => {
                         <span className="skills-name">Angular</span>
                       </div>
                     </div>
-                    <div className="skills-data shadow">
+                    <div className="skills-data shadow" data-aos="fade-up">
                       <div className="skills-names justify-content-end">
                         <span className="skills-name">Ionic</span>
                       </div>
@@ -207,7 +207,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="skills-part-2">
+              <div className="skills-part-2" data-aos="fade-up">
                 <img
                   src={WorkSkills}
                   alt="skills"
