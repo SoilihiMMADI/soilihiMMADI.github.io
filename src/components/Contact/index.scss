@@ -13,7 +13,7 @@
       font-size: 34px;
     }
 
-    .text-contact{
+    .text-contact {
       font-size: 22px;
     }
 
@@ -29,6 +29,9 @@
 
   .part-2 {
     min-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .contact-form {
       input,
@@ -40,7 +43,9 @@
         background-color: rgb(233, 232, 232);
         resize: none;
 
-        &:focus,&:focus-visible,&:hover{
+        &:focus,
+        &:focus-visible,
+        &:hover {
           border: 1px solid #bea064;
           outline: none;
         }
@@ -61,7 +66,7 @@
         }
       }
 
-      .btn-send{
+      .btn-send {
         width: 100px;
         height: 40px;
         font-size: 18px;
@@ -72,11 +77,45 @@
         color: #fff;
         transition: 0.3s;
 
-        &:hover,&:focus{
+        &:hover,
+        &:focus {
           background-color: #fff;
           color: #2faee0;
         }
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  
+}
+
+@media screen and (max-width: 992px) {
+  .contact-part {
+    flex-direction: column;
+
+    .part-1,
+    .part-2 {
+      width: 100%;
+    }
+
+    .part-1{
+      margin-bottom: 50px;
+      .text-contact{
+        text-align: center;
+      }
+    }
+    .part-2{
+      margin-top: 60px;
+    }
+  }
+}
+@media screen and (min-width: 993px){
+  .contact-part{
+    .div-separator-vertical{
+      margin: 0 20px
     }
   }
 }

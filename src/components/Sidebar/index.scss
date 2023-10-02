@@ -1,10 +1,9 @@
-/* Styles CSS pour la sidebar */
 .sidebar {
   position: fixed;
   top: 0;
   left: -230px; /* Masque la sidebar par défaut */
   width: 230px;
-  height: 100%;
+  height: 100vh;
   transition: all 0.3s ease-in-out;
   z-index: 999;
   background-color: #2faee0;
@@ -118,8 +117,23 @@
   }
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur sombre avec transparence */
+  z-index: 998; /* Inférieur à la sidebar pour que les clics passent à travers */
+  display: none; /* Initialement caché */
+}
+
 .sidebar.open {
-  left: 0; /* Affiche la sidebar lorsque 'open' est true */
+  left: 0;
+}
+
+.sidebar.open + .overlay{
+  display: block;
 }
 
 .toggle-open-button {

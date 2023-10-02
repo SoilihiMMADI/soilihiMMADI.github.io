@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSmile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import SeparatorVertical from '../SeparatorVertical'
+import Separator from '../Separator'
 
 const Contact = () => {
   const form = useRef()
@@ -73,6 +74,7 @@ const Contact = () => {
             </div>
 
             <SeparatorVertical />
+            <Separator />
 
             <div className="part-2">
               <div className="contact-form">
@@ -112,7 +114,7 @@ const Contact = () => {
                   </div>
                   <div className="d-flex justify-content-end">
                     <button type="submit" className="btn-send shadow">
-                      Envoyer
+                      ENVOYER
                     </button>
                   </div>
                 </form>

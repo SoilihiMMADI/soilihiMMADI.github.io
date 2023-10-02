@@ -37,3 +37,19 @@ footer {
   animation: fadeOut 0.7s forwards;
   animation-delay: 0.7s;
 }
+
+.section {
+  margin: 70px 100px;
+}
+
+@media screen and (max-width:992px) {
+  .section{
+    margin: 60px 40px !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .section{
+    margin: 60px 20px !important;
+  }
+}

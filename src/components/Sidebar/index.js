@@ -82,6 +82,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+      <div className="overlay"></div>
     </>
   )
 }
