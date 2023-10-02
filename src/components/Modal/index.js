@@ -11,8 +11,8 @@ const MyModal = ({ imgButton, children, title }) => {
   return (
     <>
       <div className="project-img-title">
-        <div className="project-img" onClick={handleShow}>
-          <img src={imgButton} alt="projet 1" />
+        <div className="project-img shadow" onClick={handleShow}>
+          <img src={imgButton} alt="projet" />
         </div>
         <h3 className="project-title mt-4">{title}</h3>
       </div>

@@ -15,9 +15,6 @@
   margin-left: auto;
 }
 
-.btn-close-primary {
-  color: #bea064;
-}
 .container-my-modal {
   display: flex;
 
@@ -28,23 +25,28 @@
     justify-content: space-around;
 
     .project-img {
-      width: 250px;
-      height: 164px;
+      width: 70%;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
       box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
       border-radius: 5px;
       margin: 10px;
+      transition: 0.4s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         display: block;
         border-radius: 5px;
-        transition: 1s;
         cursor: pointer;
-
-        &:hover {
-          transform: scale(1.1);
-        }
       }
     }
   }

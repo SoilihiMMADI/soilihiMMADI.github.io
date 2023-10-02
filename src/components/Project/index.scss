@@ -29,25 +29,31 @@
     flex-wrap: wrap;
 
     .project-img-title {
-      width: 40%;
+      width: 30%;
       margin: 10px;
+
       .project-img {
         width: 100%;
-        height: auto;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
         border-radius: 5px;
+        border: 2px solid #2faee0;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
 
         img {
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
           display: block;
-          border-radius: 5px;
-          border: 2px solid #2faee0;
+          border-radius: 3px;
           cursor: pointer;
-          transition: 1s;
-
-          &:hover {
-            transform: scale(1.1);
-          }
         }
       }
 
