@@ -241,7 +241,7 @@ const Project = () => {
                     <br />
                     <div className="d-flex justify-content-end">
                       <a
-                        href="https://github.com/SoilihiMMADI/GCR"
+                        href="https://github.com/SoilihiMMADI/Stage-Bvice"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -309,7 +309,7 @@ const Project = () => {
                     <br />
                     <div className="d-flex justify-content-end">
                       <a
-                        href="https://github.com/SoilihiMMADI/GCR"
+                        href="https://github.com/SoilihiMMADI/AFC"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
