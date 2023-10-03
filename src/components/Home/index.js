@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap'
 import './index.scss'
 import PictureHome from '../../assets/images/PhotoHome.png'
-import WorkSkills from '../../assets/images/WorkSkills.jpg'
+import CV from '../../assets/images/CV.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faAngular,
@@ -20,11 +20,16 @@ import Separator from '../Separator'
 import Loader from 'react-loaders'
 
 const Home = () => {
+
   return (
     <>
       <div className="home-page">
         <Container fluid>
-          <section className="home-top section" data-aos="fade-down" data-aos-delay="700">
+          <section
+            className="home-top section"
+            data-aos="fade-down"
+            data-aos-delay="700"
+          >
             <div className="text-zone-top-home">
               <h1 className="title-top-home">
                 Bonjour, je suis Soilihi M'MADI
@@ -46,7 +51,9 @@ const Home = () => {
 
           {/* ===== ABOUT =====  */}
           <section className="home-about section text-center" id="about">
-            <h2 className="section-title mb-5" data-aos="fade-up">À PROPOS</h2>
+            <h2 className="section-title mb-5" data-aos="fade-up">
+              À PROPOS
+            </h2>
 
             <div className="about-container">
               <div className="home-about-text-zone" data-aos="fade-up">
@@ -72,7 +79,9 @@ const Home = () => {
 
           {/* ===== SKILLS ===== */}
           <section className="home-skills section">
-            <h2 className="section-title text-center mb-5" data-aos="fade-up">COMPÉTENCES</h2>
+            <h2 className="section-title text-center mb-5" data-aos="fade-up">
+              COMPÉTENCES
+            </h2>
 
             <div className="skills-container">
               <div className="skills-part-1">
@@ -161,9 +170,7 @@ const Home = () => {
                           color="#bea064"
                           className="anchor-icon"
                         />
-                        <span className="skills-name">
-                          React.js
-                        </span>
+                        <span className="skills-name">React.js</span>
                       </div>
                     </div>
                     <div className="skills-data shadow" data-aos="fade-up">
@@ -173,9 +180,7 @@ const Home = () => {
                           color="#bea064"
                           className="anchor-icon"
                         />
-                        <span className="skills-name">
-                          React Native
-                        </span>
+                        <span className="skills-name">React Native</span>
                       </div>
                     </div>
                     <div className="skills-data shadow" data-aos="fade-up">
@@ -208,11 +213,11 @@ const Home = () => {
               </div>
 
               <div className="skills-part-2" data-aos="fade-up">
-                <img
-                  src={WorkSkills}
-                  alt="skills"
-                  className="skills-img shadow"
-                />
+                <h2 className="mb-5 cv-title">CV</h2>
+                
+                <Link to="/contact" className="btn-contact shadow">
+                <img src={CV} alt="skills" className="skills-img shadow"/>
+                </Link>
               </div>
             </div>
           </section>
