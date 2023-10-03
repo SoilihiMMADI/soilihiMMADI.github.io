@@ -8,6 +8,7 @@ import { faSmile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import SeparatorVertical from '../SeparatorVertical'
 import Separator from '../Separator'
+import CV from '../../assets/images/CV.png'
 
 const Contact = () => {
   const form = useRef()
@@ -149,6 +150,15 @@ const Contact = () => {
                   </div>
                 </form>
               </div>
+            </div>
+          </div>
+
+          <Separator />
+
+          <div className="cv-part">
+            <h2 data-aos="fade-up" data-aos-delay="400">CV</h2>
+            <div className="div-img" data-aos="fade-up" data-aos-delay="400">
+              <img src={CV} alt="cv" />
             </div>
           </div>
         </div>

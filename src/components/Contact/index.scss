@@ -1,6 +1,7 @@
 .contact-part {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 
   .part-1 {
     width: 45%;
@@ -87,7 +88,38 @@
   }
 }
 
+.cv-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  h2 {
+    font-size: 34px;
+    color: #2faee0;
+    margin-bottom: 50px;
+  }
+
+  .div-img {
+    width: 60%;
+    height: auto;
+    border: 2px solid #2faee0;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .cv-part {
+    .div-img {
+      width: 80%;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -111,6 +143,12 @@
     }
     .part-2 {
       margin-top: 60px;
+    }
+  }
+
+  .cv-part {
+    .div-img {
+      width: 70%;
     }
   }
 }
