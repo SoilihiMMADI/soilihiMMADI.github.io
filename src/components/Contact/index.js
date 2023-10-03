@@ -156,9 +156,9 @@ const Contact = () => {
           <Separator />
 
           <div className="cv-part">
-            <h2 data-aos="fade-up" data-aos-delay="400">CV</h2>
-            <div className="div-img" data-aos="fade-up" data-aos-delay="400">
-              <img src={CV} alt="cv" />
+            <h2 data-aos="fade-up" data-aos-delay="200">CV</h2>
+            <div className="div-img" data-aos="fade-up" data-aos-delay="200">
+              <img src={CV} alt="cv" className='shadow'/>
             </div>
           </div>
         </div>

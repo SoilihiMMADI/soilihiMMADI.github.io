@@ -215,7 +215,7 @@ const Home = () => {
               <div className="skills-part-2" data-aos="fade-up">
                 <h2 className="mb-5 cv-title">CV</h2>
                 
-                <Link to="/contact" className="btn-contact shadow">
+                <Link to="/contact" className="btn-contact">
                 <img src={CV} alt="skills" className="skills-img shadow"/>
                 </Link>
               </div>
