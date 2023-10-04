@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df5a4745.css",
+    "main.js": "/static/js/main.81efe57a.js",
+    "static/js/787.89450ca8.chunk.js": "/static/js/787.89450ca8.chunk.js",
+    "static/media/HomePageES.png": "/static/media/HomePageES.59279d3e448236a5e9f2.png",
+    "static/media/ProjectTop.jpg": "/static/media/ProjectTop.88cb2e9fa44f0cf1bb83.jpg",
+    "static/media/CV.png": "/static/media/CV.9b07f00e9a5ed0c58766.png",
+    "static/media/AboutPageBV.png": "/static/media/AboutPageBV.c389960248b09e0b450a.png",
+    "static/media/StorePageES.png": "/static/media/StorePageES.a632024ad45f4d62427c.png",
+    "static/media/LoginPageBV.png": "/static/media/LoginPageBV.f34d2b5551b40d1c3aac.png",
+    "static/media/LoginPage.png": "/static/media/LoginPage.2e8ebdca5df678039c21.png",
+    "static/media/TraitementPage.png": "/static/media/TraitementPage.1a77a66daa09dc9e89c3.png",
+    "static/media/Back-OfficePage.png": "/static/media/Back-OfficePage.2d524b2d3ad7e70216f2.png",
+    "static/media/PhotoHome.png": "/static/media/PhotoHome.83edb215258d8158a075.png",
+    "static/media/siteweb.png": "/static/media/siteweb.4da7f99d264fbe9f45f4.png",
+    "static/media/vueMedicament.jpg": "/static/media/vueMedicament.14cc5d1ed1897d46c385.jpg",
+    "static/media/vuePraticien.jpg": "/static/media/vuePraticien.bfcab5baee90ec1826e4.jpg",
+    "static/media/RegisterPageES.png": "/static/media/RegisterPageES.8fe83c9ac2c222750850.png",
+    "static/media/LogoBVICE.png": "/static/media/LogoBVICE.31b829bed5705b09d527.png",
+    "static/media/BackOfficePageES.png": "/static/media/BackOfficePageES.038ea3fb4c2416338d9a.png",
+    "static/media/connexion.jpg": "/static/media/connexion.01cf00d0f1ea2ab262f6.jpg",
+    "static/media/logoMS.png": "/static/media/logoMS.6ea311e315a23922f9b8.png",
+    "static/media/logoEco.png": "/static/media/logoEco.b7c6c0243166a25a35fc.png",
+    "static/media/logoGSB.jpg": "/static/media/logoGSB.46ecbeb6b5218f26067d.jpg",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/index.html",
+    "main.df5a4745.css.map": "/static/css/main.df5a4745.css.map",
+    "main.81efe57a.js.map": "/static/js/main.81efe57a.js.map",
+    "787.89450ca8.chunk.js.map": "/static/js/787.89450ca8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df5a4745.css",
+    "static/js/main.81efe57a.js"
+  ]
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found</title>
+</head>
+<body>
+  <script>
+    // Récupère l'URL actuelle
+    const currentUrl = window.location.href;
+
+    // Définit un tableau des URL valides de votre application
+    const validUrls = [
+      "/", 
+      "/contact",
+      "/project"
+    ];
+
+    // Vérifie si l'URL actuelle est valide
+    if (validUrls.includes(currentUrl)) {
+      // Si l'URL est valide, redirigez l'utilisateur vers cette URL
+      window.location.replace(currentUrl);
+    } else {
+      // Sinon, redirigez l'utilisateur vers la page principale
+      window.location.replace("/");
+    }
+  </script>
+</body>
+</html>
