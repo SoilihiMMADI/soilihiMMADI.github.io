@@ -61,8 +61,8 @@ const Contact = () => {
                   data-aos-delay="400"
                 >
                   Si vous êtes intéressé par mon profil ou que vous connaissez
-                  quelqu'un dans votre entourage qui le serait, n'héistez pas à
-                  me contacter via se formulaire et à jetter un coup d'oeil à
+                  quelqu'un dans votre entourage qui le serait, n'hésitez pas à
+                  me contacter via ce formulaire et à jeter un coup d'oeil à
                   mon Linkedin et mon GitHub{' '}
                   <FontAwesomeIcon icon={faSmile} color="#2faee0" />.
                 </p>

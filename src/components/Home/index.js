@@ -58,14 +58,14 @@ const Home = () => {
             <div className="about-container">
               <div className="home-about-text-zone" data-aos="fade-up">
                 <p className="home-about-text">
-                  <span className="first">Bonjour</span>,{' '}
+                  <span className="first">Bonjour</span>,je suis {' '}
                   <span className="important">Développeur WEB/MOBILE</span>, une
                   année et 6 mois d'expérience en alternance dans lesquelles
-                  j'ai pu acquérir des compétences en programmations avec des
+                  j'ai pu acquérir des compétences en programmation avec des
                   frameworks comme Angular,{' '}
                   <span className="important">Symfony</span>, Ionic,{' '}
                   <span className="important">React</span>,{' '}
-                  <span className="important">React Native</span> et consolidé
+                  <span className="important">React Native</span> et consolider
                   les compétences que j'avais déjà.
                   <br />
                   Je n'ai pas d'objection ou de crainte au fait de devoir

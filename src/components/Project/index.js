@@ -49,11 +49,11 @@ const Project = () => {
                   aujourd'hui.
                 </p>
                 <p>
-                  Vous pourrez y trouver entre autre des porjets scolaire et
+                  Vous pourrez y trouver entre autre des projets scolaires et
                   personnels.
                 </p>
                 <p>
-                  Je garde ces projets sur mon GitHub, d'une part, pour pouvoir
+                  Je garde ces projets sur mon GitHub, d'une part, pour
                   avoir un aperçu de mon évolution, mais aussi pour réutiliser
                   certaines parties si je me retrouve dans le besoin.
                 </p>
